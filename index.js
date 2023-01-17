@@ -28,7 +28,9 @@ const corsOptions = {
   },
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
+
+// app.use(cors(corsOptions));
 
 // Routing
 app.use("/api/usuarios", usuarioRoutes);
